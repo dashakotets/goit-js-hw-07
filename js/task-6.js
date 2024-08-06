@@ -20,14 +20,14 @@ function createBoxes(value) {
   for (let i = 0; i < value; i++) {
       
       const boxDiv = document.createElement('div');
-      boxDiv.style.width = `${step} px`;
-      boxDiv.style.height = `${step} px`;
+      boxDiv.style.width = `${step}px`;
+      boxDiv.style.height = `${step}px`;
     boxDiv.style.backgroundColor = getRandomHexColor();
     step += 10;
       boxesArr.push(boxDiv);
   }
   
-  boxEl.append(...boxesArr);
+  boxEl.prepend(...boxesArr);
   
 };
 
